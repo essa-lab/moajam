@@ -1,0 +1,11 @@
+<div class="input-group">
+  <input type="text" [(ngModel)]="message" class="form-control" pattern="^([\u0600-\u06FF]\s)*[\u0600-\u06FF]$" #msg="ngModel"
+
+ placeholder="Type a message..." (keyup.enter)="send()">
+  <button class="btn btn-primary" (click)="send()">Send</button>
+  
+  <div *ngIf="msg.invalid && msg.touched" class="text-danger">
+  Please enter Arabic letters separated by a single space (e.g. ك ت ب).
+</div>
+
+</div>

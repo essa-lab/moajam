@@ -1,0 +1,45 @@
+<div class="p-3 border rounded bg-light">
+
+  <!-- Word -->
+  <div *ngIf="data?.word">
+    <h5 class="text-primary">الكلمة: {{ data.word }}</h5>
+  </div>
+
+  <!-- Root -->
+  <div *ngIf="data?.root">
+    <h5 class="text-success">الجذر: {{ data.root }}</h5>
+  </div>
+
+  <!-- Meanings -->
+  <div *ngIf="data?.meanings">
+    <h6 class="mt-3">المعاني:</h6>
+    <ul>
+      <li *ngFor="let m of data.meanings" [innerHTML]="m.meaning"></li>
+    </ul>
+  </div>
+
+  <!-- General Info -->
+  <div *ngIf="data?.generalInfo">
+    <h6 class="mt-3">معلومات عامة:</h6>
+    <p>{{ data.generalInfo }}</p>
+  </div>
+
+  <!-- Nouns -->
+  <div *ngIf="data?.nouns">
+    <h6 class="mt-3">أسماء:</h6>
+    <ul>
+      <li *ngFor="let noun of data.nouns">{{ noun }}</li>
+    </ul>
+  </div>
+
+  <!-- Verbs -->
+  <div *ngIf="data?.verbs">
+    <h6 class="mt-3">أفعال:</h6>
+    <ul>
+      <li *ngFor="let verb of data.verbs">{{ verb }}</li>
+    </ul>
+  </div>
+
+  
+
+</div>

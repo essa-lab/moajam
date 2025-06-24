@@ -1,0 +1,83 @@
+{
+    "common":{
+        "root":{
+            "label":"البحث عن جذر",
+            "action":"getRoot"
+        },
+        "usage":{
+            "label":"التعرف على طريقة استخدام المساعد",
+            "action":"getUsage"
+        },
+        "faq":{
+            "label":"أسئلة شائعة",
+            "action":"getFAQ"
+        }
+    },
+    
+    "root_follow_up":{
+
+        "verbs":{
+            "label":"أفعال الجذر",
+            "action":"getVerbs"
+        },
+        "nouns":{
+            "label":"أسماء الجذر",
+            "action":"getNouns"
+        },
+        "general_information":{
+            "label":"النقوش العربية (معلومات عامة عن الجذر)",
+            "action":"getGeneralInfo"
+        }
+    },
+
+    "word":{
+        "historical":{
+            "label":"عرض الشواهد التاريخية لهذا المعنى؟",
+            "action":"getHistorical"
+        },
+        "meanings":{
+            "label":"الاطلاع على معانٍ إضافية لهذه الكلمة؟",
+            "action":"getMeaning"
+        },
+        "common_uses":{
+            "label":"التعرّف على الاستخدامات الشائعة والمتلازمات؟",
+            "action":"getSentence"
+        },
+        "back_to_root":{
+            "label":"العودة الى الجذر",
+            "action":"getBackToRoot"
+        },
+        "get_me_out":{
+            "label":"test label",
+            "action":"getMeOut"
+        }
+
+    },
+
+    "historical":{
+        "before_islam":{
+            "label":"عصر ما قبل الإسلام",
+            "action":"getEra"
+        },
+        "islamic":{
+            "label":"العصر الإسلامي",
+            "action":"getEra"
+        },
+        "abbasid_era":{
+            "label":"العصر العباسي",
+            "action":"getEra"
+        },
+        "states_emirates":{
+            "label":"عصر الدول والإمارات",
+            "action":"getEra"
+
+        },
+        "modern":{
+            "label":"العصر الحديث",
+            "action":"getEra"
+        }
+    }
+
+
+
+}

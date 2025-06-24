@@ -1,0 +1,27 @@
+<div class="container my-4">
+
+  <!-- Common Options -->
+  <div class="mb-3" *ngIf="options?.common">
+    <h5>خيارات عامة</h5>
+    <div class="d-flex flex-wrap gap-2">
+      <button *ngFor="let opt of objectToArray(options.common) "
+              class="btn btn-outline-primary"
+              (click)="select(opt)">
+        {{ opt.label }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Dynamic Stage Options -->
+  <div class="mb-3" *ngIf="options?.[stage]">
+    <h5>خيارات {{ stage }}</h5>
+    <div class="d-flex flex-wrap gap-2">
+      <button *ngFor="let opt of objectToArray(options[stage])"
+              class="btn btn-outline-secondary"
+              (click)="select(opt)">
+        {{ opt.label }}
+      </button>
+    </div>
+  </div>
+
+</div>
